@@ -1,0 +1,20 @@
+.section {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2rem;
+}
+
