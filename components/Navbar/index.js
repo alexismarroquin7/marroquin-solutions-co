@@ -8,8 +8,9 @@ export const NavBar = () => {
     <nav
       className={styles.nav}
     >
-      <h3>MobileWash Whiz</h3>
-      
+      <h3
+        className={styles.logo}
+      >Marroquin Solutions</h3>
     </nav>
   </div>
   );

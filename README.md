@@ -1,9 +1,0 @@
-[ ] navbar
-  [ ] Logo
-  [ ] Menu
-[ ] pages
-  [ ] landing
-  [ ] services
-  [ ] contact
-  [ ] about
-  [ ] footer

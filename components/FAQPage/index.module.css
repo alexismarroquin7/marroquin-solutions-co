@@ -1,0 +1,16 @@
+.section {
+  padding: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.icon_open {
+  transform: rotate(-180deg);
+}
+
+.description_hidden {
+  display: none;
+}

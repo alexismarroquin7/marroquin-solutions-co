@@ -8,72 +8,107 @@ const page = {
   description: `Here's what we offer.`,
   services: [
     {
+      /*
+        Comprehensive survey and data collection from your customers over a 1-month period.
+        Detailed report highlighting the most significant findings and recommendations for improvements.
+      */
       id: uuid(),
-      title: `Basic Package`,
-      description: `This entry-level package includes a *thorough exterior car wash* and a *basic interior cleaning* to give the car a clean and shiny appearance.`,
-      frequency: "1 wash (monthly)",
-      price: 25,
+      title: `Growth Insights`,
+      subTitle: `BASIC`,
+      description: "Discover customer reviews and suggestions with a detailed report highlighting the most significant findings.",
+      price: 500,
       features: [
         {
           id: uuid(),
-          name: "thorough exterior car wash"
+          name: "Comprehensive survey"
         },
         {
           id: uuid(),
-          name: "basic interior cleaning"
+          name: "Data collection"
+        },
+        {
+          id: uuid(),
+          name: "Detailed report"
         },
       ]
-    }, 
+    },
+    {
+      /*
+        Everything included in the Basic Package.
+        In-depth analysis of the data to identify key trends and actionable insights.
+        Personalized consultation with our experts to discuss the findings and strategies for improvement.
+      */
+      id: uuid(),
+      title: `Experience Accelerator`,
+      subTitle: `STANDARD`,
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" ,
+      price: 750,
+      features: [
+        {
+          id: uuid(),
+          name: "Comprehensive survey"
+        },
+        {
+          id: uuid(),
+          name: "Data collection"
+        },
+        {
+          id: uuid(),
+          name: "Detailed report"
+        },
+        {
+          id: uuid(),
+          name: "In-Depth analysis"
+        },
+        {
+          id: uuid(),
+          name: "Personalized consultation"
+        }
+      ]
+    },
     {
       id: uuid(),
-      title: `Premium Package`,
-      description: `The premium package includes everything in the Basic Package plus additional services like waxing, tire shine, and interior vacuuming.`,
-      frequency: "2 washes (bi-weekly)",
-      price: 45,
+      title: `Data-Driven Success`,
+      subTitle: `PREMIUM`,
+      // description: `
+      //   Everything included in the Standard Package.
+      //   Additional data visualization and graphical representations to make the insights more accessible.
+      //   Customized customer feedback analysis to understand individual preferences and pain points.
+        // Ongoing support and follow-up after the implementation of recommended improvements.
+      // `,
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      price: 1000,
       features: [
         {
           id: uuid(),
-          name: "everything in the Basic Package"
+          name: "Comprehensive survey"
         },
         {
           id: uuid(),
-          name: "waxing"
+          name: "Data collection"
         },
         {
           id: uuid(),
-          name: "tire shine"
+          name: "Detailed Report"
         },
         {
           id: uuid(),
-          name: "interior vacuuming"
+          name: "In-Depth Analysis"
+        },
+        {
+          id: uuid(),
+          name: "Personalized consultation"
+        },
+        {
+          id: uuid(),
+          name: "Custom Data Visualization"
+        },
+        {
+          id: uuid(),
+          name: "Ongoing support"
         },
       ]
-    }, 
-    {
-      id: uuid(),
-      title: `Platinum Package`,
-      description: `The Platinum Package offers a comprehensive car detailing service, including waxing, tire shine, interior deep cleaning, upholstery treatment, and window cleaning.`,
-      frequency: "4 washes (weekly)",
-      price: 100,
-      features: [
-        {
-          id: uuid(),
-          name: "everything in the Premium Package"
-        },
-        {
-          id: uuid(),
-          name: "interior deep cleaning"
-        },
-        {
-          id: uuid(),
-          name: "upholstery treatment"
-        },
-        {
-          id: uuid(),
-          name: "window cleaning"
-        },
-      ]
-    }, 
+    }
   ]
 }
 
@@ -100,7 +135,7 @@ export const ServicesPage = () => {
         </div>
 
         <div
-          className={styles.container}
+          className={styles.service_card_list}
         >
           {page.services.map(service => (
             <ServiceCard 

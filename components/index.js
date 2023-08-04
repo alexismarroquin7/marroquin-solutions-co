@@ -1,2 +1,5 @@
+export * from "./FAQPage"
+export * from "./HowItWorksPage"
 export * from "./LandingPage"
 export * from "./ServicesPage"
+export * from "./Navbar"

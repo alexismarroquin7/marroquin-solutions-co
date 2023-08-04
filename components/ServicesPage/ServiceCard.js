@@ -1,4 +1,4 @@
-import { Add, Check } from "@mui/icons-material";
+import { Add, Check, CheckCircle } from "@mui/icons-material";
 import styles from "./ServiceCard.module.css";
 
 export const ServiceCard = ({service}) => {
@@ -6,27 +6,26 @@ export const ServiceCard = ({service}) => {
   <div
     className={styles.container}
   >
-    <div
-      className={styles.image}
-    ></div>
+    <p
+      className={styles.subTitle}
+    >{service.subTitle}</p>
+        
+    <h1>{service.title}</h1>
+    <p>
+      {service.description}
+    </p>
 
-    <div
-      className={styles.card}
-    >
-      <h2
-        className={styles.card_top}
+    <p
+      className={styles.price}
+    >${service.price}
+      <span
+        className={styles.price_subtext}
       >
-        {service.title}
-        <span
-          className={styles.price}
-        >${service.price}{'/m'}</span>
-      </h2>
-      <p
-        className={styles.frequency}
-      >
-        {service.frequency}
-      </p>
-      <ul
+        {' / month'}
+      </span>
+    </p>
+
+    <ul
         className={styles.features_list}
       >
         {service.features.map(ft => {
@@ -35,17 +34,10 @@ export const ServiceCard = ({service}) => {
               key={ft.id}
               className={styles.features_list_item}
             >
-              {ft.name.includes('everything') ? (
-                <Check
-                  fontSize="inherit"
-                  className={styles.features_list_item_icon}
-                /> 
-              ):(
-                <Add
-                  fontSize="inherit"
-                  className={styles.features_list_item_icon}
-                />
-              )}
+              <CheckCircle
+                fontSize="inherit"
+                className={styles.features_list_item_icon}
+              />
 
               <span
                 className={styles.features_list_item_name}
@@ -55,12 +47,11 @@ export const ServiceCard = ({service}) => {
             </li>
           )
         })}
-      </ul>
+    </ul>
       
-      
-
-      <button>Book wash</button>
-    </div>
+    <button
+      className={styles.button}
+    >Get Started</button>
   </div>
   );
 }

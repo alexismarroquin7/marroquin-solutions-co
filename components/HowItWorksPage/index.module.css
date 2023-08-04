@@ -1,0 +1,12 @@
+.section {
+  padding: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.icon {
+  font-size: 5rem;
+}

@@ -1,5 +1,5 @@
 .wrapper {
-  margin-top: 8rem;
+  margin-top: 6.5rem;
 }
 
 .nav {
@@ -11,6 +11,8 @@
   right: 0;
 
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 
   background-color: var(--white);
   padding: 2rem;
