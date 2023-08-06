@@ -121,6 +121,7 @@ export const ServicesPage = () => {
   return (
     <section
       className={styles.section}
+      id="services"
     >
       <div
         className={styles.card}

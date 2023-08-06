@@ -3,6 +3,10 @@
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  background-color: var(--black);
+  background-color: linear-gradient(#35c53a,#000);
+  color: var(--white);
+  padding: 15vh 2rem;
 }
 
 .image {
@@ -16,8 +20,10 @@
   flex-flow: column wrap;
   align-items: center;
   text-align: center;
-  gap: 2rem;
   padding: 2rem;
+  gap: 2rem;
+
+  border: var(--border);
 }
 
 .container {

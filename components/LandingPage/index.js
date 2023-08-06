@@ -1,12 +1,12 @@
 "use client";
-import { v4 as uuid } from "uuid";
+
 import styles from "./index.module.css";
 
 const page = {
-  title: 'Boost Your Business with a Tailored Service Audit',
-  description: `Enhance your local business's sales, customer experience, and reputation with our transformative "Service Audit" program. Gain valuable insights, discover customer-facing improvements, and boost your revenue for a brighter and more successful future.`,
+  title: "Using *Data-Driven* Insights to *Unlock* Your Business Potential.",
+  description: 'Delight Customers, Boost Reviews, and Maximize Sales.',
   button: {
-    text: "Get a Service Audit"
+    text: "Get Started"
   }
 }
 
@@ -22,9 +22,18 @@ export const LandingPage = () => {
     >
       
       <div
-        className={styles.card}
+        className={`glass glow ${styles.card}`}
       >
-        <h1>{page.title}</h1>
+        <h1>
+          {page.title.split('*').map((string, i) => {
+            return i % 2 === 0
+            ? string
+            : <span key={string} className="highlight">{string}</span>
+          })}
+        </h1>
+        <p
+          className={styles.description}
+        >{page.description}</p>
 
         <button
           onClick={handleClick}
@@ -32,9 +41,9 @@ export const LandingPage = () => {
         
       </div>
 
-      <div
+      {/* <div
         className={styles.image}
-      ></div>
+      ></div> */}
 
     </section>
   )

@@ -6,13 +6,17 @@
   gap: 2rem;
   box-shadow: var(--box-shadow);
   border-radius: 1rem;
-  background-color: var(--white);
+  border: var(--border);
 }
 
 .title {
   width: 100%;
   text-align: center;
   color: var(--color-primary);
+}
+
+.description {
+  color: #eee;
 }
 
 .container {

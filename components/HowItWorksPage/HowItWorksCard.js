@@ -1,12 +1,13 @@
 import styles from "./HowItWorksCard.module.css";
 
 export const HowItWorksCard = ({item}) => {
+  const {Icon} = item;
   return (
   <div
-    className={styles.card}
+    className={`glass ${styles.card}`}
   >
 
-    {item.icon()}
+    <Icon/>
 
     <div
       className={styles.container}
@@ -17,7 +18,9 @@ export const HowItWorksCard = ({item}) => {
         {item.title}
       </h3>
 
-      <p>
+      <p
+        className={styles.description}
+      >
         {item.description}
       </p>
     </div>

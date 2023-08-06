@@ -1,4 +1,6 @@
+export * from "./ContactPage"
 export * from "./FAQPage"
+export * from "./Footer"
 export * from "./HowItWorksPage"
 export * from "./LandingPage"
 export * from "./ServicesPage"

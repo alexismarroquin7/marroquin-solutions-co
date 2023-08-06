@@ -1,0 +1,32 @@
+.footer {
+  padding: 2rem;
+  border-top: var(--border);
+  background-color: var(--black);
+}
+
+.footer_links {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+
+.footer_link {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: bold;
+  padding: 2rem 0;
+}
+
+.footer_logo {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.footer_link_logo {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+}

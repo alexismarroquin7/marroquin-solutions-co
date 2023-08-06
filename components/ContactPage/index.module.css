@@ -3,13 +3,10 @@
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  text-align: center;
   gap: 2rem;
+  width: 100%;
+
   background-color: var(--black);
   color: var(--white);
 }
 
-.icon {
-  font-size: 5rem;
-  color: var(--color-primary);
-}

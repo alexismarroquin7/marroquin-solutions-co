@@ -1,17 +1,21 @@
-import { Add, Check, CheckCircle } from "@mui/icons-material";
+import { CheckCircle } from "@mui/icons-material";
 import styles from "./ServiceCard.module.css";
 
 export const ServiceCard = ({service}) => {
   return (
   <div
-    className={styles.container}
+    className={`glass ${styles.container}`}
   >
     <p
-      className={styles.subTitle}
+      className={`${styles.subTitle}`}
     >{service.subTitle}</p>
         
-    <h1>{service.title}</h1>
-    <p>
+    <h1
+      className={service.subTitle === "PREMIUM" ? `highlight` : ""}
+    >{service.title}</h1>
+    <p
+      className={styles.description}
+    >
       {service.description}
     </p>
 
