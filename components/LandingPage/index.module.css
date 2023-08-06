@@ -31,3 +31,10 @@
   flex-flow: column wrap;
   gap: 1rem;
 }
+
+@media (min-width: 769px) {
+  .card {
+    width: 50%;
+  }
+
+}

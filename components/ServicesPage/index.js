@@ -129,7 +129,7 @@ export const ServicesPage = () => {
         <div
           className={styles.container}
         >
-          <h1>{page.title}</h1>
+          <h2>{page.title}</h2>
           <p>
             {page.description}
           </p>

@@ -1,5 +1,5 @@
 .section {
-  padding: 2rem;
+  padding: 10vh 2rem;
   display: flex;
   flex-flow: column wrap;
   align-items: center;

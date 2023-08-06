@@ -10,9 +10,9 @@ export const ServiceCard = ({service}) => {
       className={`${styles.subTitle}`}
     >{service.subTitle}</p>
         
-    <h1
+    <h3
       className={service.subTitle === "PREMIUM" ? `highlight` : ""}
-    >{service.title}</h1>
+    >{service.title}</h3>
     <p
       className={styles.description}
     >

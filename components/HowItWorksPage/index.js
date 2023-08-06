@@ -1,10 +1,9 @@
 
 import { v4 as uuid } from "uuid";
 import { HowItWorksCard } from "./HowItWorksCard";
-
+import { CurrencyExchange, Handshake, TrendingUp } from "@mui/icons-material";
 
 import styles from "./index.module.css"
-import { CurrencyExchange, Handshake, TrendingUp } from "@mui/icons-material";
 
 const page = {
   title: "How It Works",
@@ -12,7 +11,8 @@ const page = {
     {
       id: uuid(),
       title: "Boost Sales and Customer Satisfaction!",
-      description: "Uncover untapped potential and elevate your business with our Service Audit program—discover valuable insights to enhance sales and customer satisfaction.",
+      description: "By analyzing customer feedback, we help you uncover untapped potential and tailor improvements that will delight your customers, boost sales, and lead your business to success.",
+      
       Icon: () => <CurrencyExchange
         fontSize="inherit"
         className={styles.icon}
@@ -46,15 +46,21 @@ export const HowItWorksPage = () => {
   <section
     className={styles.section}
   >
-    <h1>{page.title}</h1>
-    {page.list.map(item => {
-      return (
-        <HowItWorksCard 
-          key={item.id}
-          item={item}
-        />
-      )
-    })}
+    <h2>{page.title}</h2>
+    <div
+      className={styles.card_list}
+    >
+      {page.list.map((item, i) => {
+        const { Icon } = item;
+        return (
+          <HowItWorksCard 
+            key={item.id}
+            item={item}
+            icon={<Icon/>}
+          />
+        )
+      })}
+    </div>
   </section>
   );
 }

@@ -1,13 +1,15 @@
+
 import styles from "./HowItWorksCard.module.css";
 
-export const HowItWorksCard = ({item}) => {
-  const {Icon} = item;
+export const HowItWorksCard = ({item, icon}) => {
   return (
   <div
     className={`glass ${styles.card}`}
   >
 
-    <Icon/>
+    <span>
+      {icon}
+    </span>
 
     <div
       className={styles.container}

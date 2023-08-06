@@ -54,7 +54,7 @@ export const FAQPage = () => {
     <h1>{page.title}</h1>
 
     <div
-      className={styles.question_list}
+      className={`glass ${styles.question_list}`}
     >
       {questions.map(q => {
         return (
@@ -62,27 +62,26 @@ export const FAQPage = () => {
             key={q.id}
             className={styles.question_item}
           >
-
-            <button
+            <div
               className={styles.question_item_top}
-              onClick={() => {
-                handleToggleOpen(q.id);
-              }}
             >
               <h3
                 className={styles.question_item_title}
               >
-                {q.title}
+                {q.title} 
               </h3>
-              
-              <ExpandMore
-                fontSize="inherit"
-                className={`${q.open ? styles.icon_open : styles.icon_closed}`}
+              <button
+                className={styles.question_item_button}
                 onClick={() => {
                   handleToggleOpen(q.id);
                 }}
-              />
-            </button>
+              >
+                <ExpandMore
+                  fontSize="inherit"
+                  className={`${q.open ? styles.icon_open : styles.icon_closed}`}
+                />
+              </button>
+            </div>
             
             <div
               className={`${styles.question_item_bottom} ${q.open ? "" : styles.question_item_bottom_hidden}`}
