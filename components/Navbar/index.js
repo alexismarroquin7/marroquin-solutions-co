@@ -14,7 +14,7 @@ export const NavBar = () => {
   const toggleOpen = () => setOpen(!open);
   
   useEffect(() => {
-    if(typeof window !== "undefined") {
+    if(typeof window !== "undefined" && !open) {
       const handleScroll = () => {
         const currentScrollPos = window.scrollY;
         setVisible(prevScrollPos > currentScrollPos);
@@ -27,17 +27,13 @@ export const NavBar = () => {
         window.removeEventListener('scroll', handleScroll);
       };
     }
-  }, [prevScrollPos]);
+  }, [prevScrollPos, open]);
 
   useEffect(() => {
     if(typeof window !== "undefined") {
       document.querySelector('body').style.overflow = open 
       ? "hidden" 
-      : "auto";
-      document.querySelector('body').style.position = open 
-      ? "fixed" 
-      : "";
-
+      : "visible";
     }
   }, [open]);
 

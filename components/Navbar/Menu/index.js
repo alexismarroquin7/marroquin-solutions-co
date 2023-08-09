@@ -1,9 +1,8 @@
 import { v4 as uuid } from "uuid";
 
-import Link from "next/link";
+import { KeyboardArrowRight } from "@mui/icons-material";
 
 import styles from "./index.module.css";
-import { KeyboardArrowRight } from "@mui/icons-material";
 
 const links = [
   {
