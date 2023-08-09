@@ -12,13 +12,16 @@
 
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-
-  background-color: var(--black);
-  border-radius: 0;
-  border: 0;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
   
   color: var(--white);
+  border-radius: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  
   border-color: var(--color-primary);
 
   padding: 2rem;

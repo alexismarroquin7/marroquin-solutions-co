@@ -17,10 +17,7 @@
   gap: 2rem;
 }
 
-.icon {
-  font-size: 5rem;
-  color: var(--color-primary);
-}
+
 
 @media (min-width: 769px) {
   .card_list {

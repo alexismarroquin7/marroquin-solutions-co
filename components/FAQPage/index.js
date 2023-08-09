@@ -65,17 +65,17 @@ export const FAQPage = () => {
             <div
               className={styles.question_item_top}
             >
-              <h3
-                className={styles.question_item_title}
-              >
-                {q.title} 
-              </h3>
               <button
-                className={styles.question_item_button}
+                className={`${styles.question_item_button} ${q.open ? "" : styles.question_item_button_closed}`}
                 onClick={() => {
                   handleToggleOpen(q.id);
                 }}
               >
+                <span
+                  className={styles.question_item_title}
+                >
+                  {q.title} 
+                </span>
                 <ExpandMore
                   fontSize="inherit"
                   className={`${q.open ? styles.icon_open : styles.icon_closed}`}

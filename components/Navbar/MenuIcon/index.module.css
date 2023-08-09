@@ -1,0 +1,28 @@
+.path {
+  stroke-width: 10;
+  stroke: var(--color-primary);
+  transition: all .2s ease-in-out;
+}
+
+.path_a {
+  d: path("M 0 10 l 100 0");
+}
+.path_b {
+  d: path("M 0 50 l 100 0");
+}
+.path_c {
+  d: path("M 0 90 l 100 0");
+}
+
+
+.path_a.open {
+  d: path("M 0 100 l 100 -100");
+}
+
+.path_b.open {
+  display: none;
+}
+
+.path_c.open {
+  d: path("M 0 0 l 100 100");
+}

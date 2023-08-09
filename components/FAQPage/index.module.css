@@ -55,6 +55,15 @@
   color: var(--color-primary);
   border: 0;
   box-shadow: none;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.question_item_button_closed {
+  font-weight: normal;
 }
 
 .question_item_bottom {

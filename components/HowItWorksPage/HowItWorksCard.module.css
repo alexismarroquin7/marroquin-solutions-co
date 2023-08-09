@@ -25,3 +25,8 @@
   align-items: center;
   gap: 1rem;
 }
+
+.icon {
+  font-size: 5rem;
+  color: var(--color-primary);
+}
